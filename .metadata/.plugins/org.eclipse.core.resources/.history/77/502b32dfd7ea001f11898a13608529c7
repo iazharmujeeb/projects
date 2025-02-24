@@ -1,0 +1,17 @@
+package com.firstspringboot.springboot.waystocreatebean;
+
+import org.springframework.beans.factory.annotation.Value;
+
+public class Employee {
+	
+	@Value("501")
+	private int eid;
+	
+	@Value("Mujeeb")
+	private String name;
+	
+	public void getDetail()
+	{
+		System.out.println("eid "+eid+" ename "+name);
+	}
+}

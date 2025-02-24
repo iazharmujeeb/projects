@@ -1,0 +1,5 @@
+package com.firstspringboot.springboot;
+
+public class Student {
+
+}

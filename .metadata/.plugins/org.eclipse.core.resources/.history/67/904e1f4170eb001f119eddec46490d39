@@ -1,0 +1,23 @@
+package com.firstspringboot.springboot.waystocreatebean;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Student {
+//	@Value("101")will override constructor values
+	private int sid;
+	
+//	@Value("Azhar")will override constructor values
+	private String name;
+	
+	public Student(int sid,String name) {
+		this.sid = sid;
+		this.name = name;
+	}
+	
+	public void getDetail()
+	{
+		System.out.println("sid = "+sid+" name = "+name);
+	}
+}
